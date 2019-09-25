@@ -164,6 +164,7 @@ body {
         margin: 2rem;
         text-decoration: none;
         font-size: 1.25rem;
+        color: @secondary-color;
       }
       h1 {
         font-size: 5rem;
@@ -192,6 +193,7 @@ body {
     hr {
       border: solid white 1px;
       width: 80%;
+      margin-bottom: 2rem;
     }
     p {
       margin: 1rem;
@@ -199,13 +201,13 @@ body {
     }
     a {
       text-decoration: none;
-      color: white;
+      color: @secondary-color;
       margin: 1rem;
       text-align: center;
     }
 
     li {
-      color: white;
+      color: @secondary-color;
       text-align: center;
     }
 
@@ -216,7 +218,7 @@ body {
       margin: 1rem;
     }
   }
-
+  /*******************Middle content*********/
   .middle_content_container {
     margin-top: 3rem;
     h2 {
@@ -226,11 +228,23 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%;
+      width: 85%;
       background-color: #cbcccb;
+      margin: 3rem auto;
     }
     .work {
       margin: 2rem 0;
+      padding: 0 2rem;
+    }
+    h2 {
+      color: @secondary-color;
+    }
+    .education_container {
+      display: flex;
+      background-color: #cbcccb;
+      width: 85%;
+      padding: 2rem;
+      margin: 2rem auto;
     }
   }
 }
