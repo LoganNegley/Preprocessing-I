@@ -153,6 +153,11 @@ body {
   flex-wrap: wrap;
   background-color: #ececee;
 
+  @media (max-width: 500px) {
+    margin: 0;
+    justify-content: center;
+  }
+
   /**********Global**************/
   h1,
   h2,
@@ -168,10 +173,19 @@ body {
   #middle_main_container {
     width: 75%;
     margin: 0 1.5rem;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0;
+    }
     header {
       text-align: center;
       nav {
         margin: 1rem 0;
+        @media (max-width: 500px) {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
       }
       a {
         padding: 2rem;
@@ -179,6 +193,11 @@ body {
         text-decoration: none;
         font-size: 1.25rem;
         color: @secondary-color;
+        @media (max-width: 500px) {
+          margin: 0.25rem;
+          padding: 0.5rem;
+          background-color: @primary-color;
+        }
       }
       h1 {
         margin: 2rem 0;
@@ -196,9 +215,7 @@ body {
     background-color: @primary-color;
 
     img {
-      width: 85%;
-      margin: 2rem;
-      border: black solid 1px;
+      width: 100%;
     }
     h1 {
       font-size: 2.25rem;
@@ -249,7 +266,7 @@ body {
       margin: 3rem auto;
     }
     .work {
-      margin: 2rem 0;
+      margin: 0.5rem 0;
       padding: 0 2rem;
 
       h4 {
@@ -263,17 +280,19 @@ body {
     }
     .education_container {
       .work_history_container();
-
-      h4 {
-        text-transform: uppercase;
-        text-decoration: underline;
-        margin: 2rem;
-        color: @secondary-color;
-        text-align: center;
-      }
-      p {
-        margin: 2rem;
-      }
+    }
+    .education {
+      .work();
+    }
+    h4 {
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: @secondary-color;
+      margin: 2rem;
+      text-align: center;
+    }
+    p {
+      margin: 2rem;
     }
   }
 }

@@ -145,6 +145,12 @@ body {
   /*********About Me Side Bar********/
   /*******************Middle content*********/
 }
+@media (max-width: 500px) {
+  .main-container {
+    margin: 0;
+    justify-content: center;
+  }
+}
 .main-container h1,
 .main-container h2,
 .main-container h3 {
@@ -157,11 +163,24 @@ body {
   width: 75%;
   margin: 0 1.5rem;
 }
+@media (max-width: 500px) {
+  .main-container #middle_main_container {
+    width: 100%;
+    margin: 0;
+  }
+}
 .main-container #middle_main_container header {
   text-align: center;
 }
 .main-container #middle_main_container header nav {
   margin: 1rem 0;
+}
+@media (max-width: 500px) {
+  .main-container #middle_main_container header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .main-container #middle_main_container header a {
   padding: 2rem;
@@ -169,6 +188,13 @@ body {
   text-decoration: none;
   font-size: 1.25rem;
   color: #74b5e5;
+}
+@media (max-width: 500px) {
+  .main-container #middle_main_container header a {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    background-color: #2071ae;
+  }
 }
 .main-container #middle_main_container header h1 {
   margin: 2rem 0;
@@ -183,9 +209,7 @@ body {
   background-color: #2071ae;
 }
 .main-container #about_me img {
-  width: 85%;
-  margin: 2rem;
-  border: black solid 1px;
+  width: 100%;
 }
 .main-container #about_me h1 {
   font-size: 2.25rem;
@@ -233,7 +257,7 @@ body {
   margin: 3rem auto;
 }
 .main-container .middle_content_container .work {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
   padding: 0 2rem;
 }
 .main-container .middle_content_container .work h4 {
@@ -252,13 +276,22 @@ body {
   background-color: #cbcccb;
   margin: 3rem auto;
 }
-.main-container .middle_content_container .education_container h4 {
-  text-transform: uppercase;
+.main-container .middle_content_container .education {
+  margin: 0.5rem 0;
+  padding: 0 2rem;
+}
+.main-container .middle_content_container .education h4 {
   text-decoration: underline;
-  margin: 2rem;
+  text-transform: uppercase;
   color: #74b5e5;
+}
+.main-container .middle_content_container h4 {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #74b5e5;
+  margin: 2rem;
   text-align: center;
 }
-.main-container .middle_content_container .education_container p {
+.main-container .middle_content_container p {
   margin: 2rem;
 }
