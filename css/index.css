@@ -171,6 +171,7 @@ body {
   color: #74b5e5;
 }
 .main-container #middle_main_container header h1 {
+  margin: 2rem 0;
   font-size: 5rem;
   font-family: "mansalva", cursive;
 }
