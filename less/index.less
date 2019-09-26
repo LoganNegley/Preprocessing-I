@@ -138,7 +138,8 @@ html,
 body {
   height: 100%;
 }
-
+/*******************************************************/
+/*******************************************************/
 /********Variables*************/
 @primary-color: #2071ae;
 @secondary-color: #74b5e5;
@@ -173,6 +174,8 @@ body {
   #middle_main_container {
     width: 75%;
     margin: 0 1.5rem;
+    /******************************/
+    /********Media at 500px*******/
     @media (max-width: 500px) {
       width: 100%;
       margin: 0;
@@ -181,6 +184,8 @@ body {
       text-align: center;
       nav {
         margin: 1rem 0;
+        /*************************************/
+        /***********Medica at 500px***********/
         @media (max-width: 500px) {
           width: 100%;
           display: flex;
@@ -193,6 +198,8 @@ body {
         text-decoration: none;
         font-size: 1.25rem;
         color: @secondary-color;
+        /***********************************/
+        /**********Media at 500px***********/
         @media (max-width: 500px) {
           margin: 0.25rem;
           padding: 0.5rem;
@@ -214,8 +221,17 @@ body {
     width: 20%;
     background-color: @primary-color;
 
+    /*****************************************/
+    /*************Media at 500px***************/
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+
     img {
       width: 100%;
+      /***************************************/
+      /**********Media at 500px**************/
+      display: none;
     }
     h1 {
       font-size: 2.25rem;
@@ -254,6 +270,11 @@ body {
   /*******************Middle content*********/
   .middle_content_container {
     margin-top: 3rem;
+    /************************************/
+    /************Media at 500px***********/
+    @media (max-width: 500px) {
+      background-color: @primary-color;
+    }
     h2 {
       font-size: 1.75rem;
     }
@@ -273,6 +294,13 @@ body {
         text-decoration: underline;
         text-transform: uppercase;
         color: @secondary-color;
+      }
+
+      /*************************************/
+      /**********Media at 500px*************/
+      @media (max-width: 500px) {
+        margin: 0;
+        padding: 0rem;
       }
     }
     h2 {
